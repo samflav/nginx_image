@@ -1,31 +1,5 @@
-# sflavin-nginx-server/NGINX_Container
+Repo for a custom NGINX docker container and compose file.
 
+Files in the conf directory are loaded into the image/container and build or deploy time respectively.
 
-
-## Getting Started
-
-Download links:
-
-SSH clone URL: ssh://git@git.jetbrains.space/sflavin/sflavin-nginx-server/NGINX_Container.git
-
-HTTPS clone URL: https://git.jetbrains.space/sflavin/sflavin-nginx-server/NGINX_Container.git
-
-
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-## Prerequisites
-
-What things you need to install the software and how to install them.
-
-```
-Examples
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a production system.
-
-## Resources
-
-Add links to external resources for this project, such as CI server, bug tracker, etc.
+Currently, example config for *.samuelflavin.com
