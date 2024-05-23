@@ -5,7 +5,7 @@ services:
     ports:
       - 443:443
     configs:
-      - name 
+      - sites.conf 
     secrets:
       - pub.cer
       - pri_key.key
