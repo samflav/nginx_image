@@ -5,15 +5,22 @@ services:
     ports:
       - 443:443
     configs:
-      conf/nginx/sites.conf:
-        file: .webserver/conf/deploy/sites.conf
+      - name 
     secrets:
-      certs/pub.cer:
-        file: ./.secrets/pub.cer
-      certs/pri_key.key:
-        file: ./.secrets/pri_key.key
+      - certs/pub.cer
+      - certs/pri_key.key
     volumes:
       - content:/var/www/
 
 volumes:
   content:
+
+secrets:
+  certs/pub.cer:
+    file: ./.secrets/pub.cer
+  certs/pri_key.key:
+    file: ./.secrets/pri_key.key
+
+configs:
+  name:
+    file: ./webserver/conf/deploy/sites.conf
