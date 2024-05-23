@@ -7,8 +7,8 @@ services:
     configs:
       - name 
     secrets:
-      - certs/pub.cer
-      - certs/pri_key.key
+      - pub.cer
+      - pri_key.key
     volumes:
       - content:/var/www/
 
@@ -16,11 +16,11 @@ volumes:
   content:
 
 secrets:
-  certs/pub.cer:
+  pub.cer:
     file: ./.secrets/pub.cer
-  certs/pri_key.key:
+  pri_key.key:
     file: ./.secrets/pri_key.key
 
 configs:
-  name:
+  sites.conf:
     file: ./webserver/conf/deploy/sites.conf
