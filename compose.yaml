@@ -1,6 +1,6 @@
 services:
   webserver:
-    image: sflavin.registry.jetbrains.space/p/sflavin-nginx-server/containers/webserver:latest
+    image: samuelflavin/samuel.flavin:webserver 
     build: ./webserver
     ports:
       - 443:443
